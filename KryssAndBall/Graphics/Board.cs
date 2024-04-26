@@ -8,15 +8,14 @@ namespace KryssAndBall.Graphics;
 
 internal class Board
 {
-    internal static char[,] board()
+    internal char[,] chars { get; set; }
+    internal void board()
     {
-        char[,] board = new char[3, 3] { { ' ', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
-
-        PrintBoard(board);
-        return board;
+        //laver et todimensionelt char-array
+        chars = new char[3, 3] { { ' ', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
     }
 
-    internal static void PrintBoard(char[,] boardPos)
+    internal void PrintBoard(char[,] boardPos)
     {
         Console.WriteLine("  1 | 2 | 3 ");
         Console.WriteLine($"1 {boardPos[0,0]} | {boardPos[0, 1]} | {boardPos[0, 2]}");

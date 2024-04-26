@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace KryssAndBall.Validation
 {
-    internal class GameStatus
+    public class GameStatus
     {
-        internal static bool IsWinner(char[,] board)
+        public bool IsWinner(char[,] board)
         {
             for (int i = 0; i < 3; i++)
             {
@@ -27,14 +27,14 @@ namespace KryssAndBall.Validation
             }
             return false;
         }
-        private static bool IsEqual(char first, char second, char third)
+        private bool IsEqual(char first, char second, char third)
         => first == second && second == third && first != ' ';
-        internal static void GameEnded(char[,] boardArray, char player)
+        public void GameEnded(char[,] boardArray, char player)
         {
             Console.Clear();
-            Board.PrintBoard(boardArray);
+            Board board = new Board();
+            board.PrintBoard(boardArray);
             Console.WriteLine($"{player} vandt!");
-
         }
     }
 }

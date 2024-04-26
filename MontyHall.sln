@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "Except
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP-intro", "OOP-intro\OOP-intro.csproj", "{7A91A607-65C7-482F-80DC-10C761888A71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KryssAndBall", "KryssAndBall\KryssAndBall.csproj", "{66F961E9-0C71-47D8-9AFD-3A8D846A1214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryssAndBall", "KryssAndBall\KryssAndBall.csproj", "{66F961E9-0C71-47D8-9AFD-3A8D846A1214}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{D4D5F5CB-4DDD-4DA7-AEE3-4F1AB550A04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTicTacToe", "TestTicTacToe\TestTicTacToe.csproj", "{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +49,17 @@ Global
 		{66F961E9-0C71-47D8-9AFD-3A8D846A1214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66F961E9-0C71-47D8-9AFD-3A8D846A1214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66F961E9-0C71-47D8-9AFD-3A8D846A1214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66F961E9-0C71-47D8-9AFD-3A8D846A1214} = {D4D5F5CB-4DDD-4DA7-AEE3-4F1AB550A04C}
+		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB} = {D4D5F5CB-4DDD-4DA7-AEE3-4F1AB550A04C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D86C315-0F41-4704-889B-C2134CC84AAB}
