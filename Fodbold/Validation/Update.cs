@@ -4,6 +4,7 @@ public class Update
 {
     public static (CountUp, CountUp) UpdateScore((CountUp, CountUp) temp, (CountUp, CountUp) final)
     {
+        //opdaterer holdenes statistikker
         Program.logWriter.LogWrite("Starting score update.");
 
         final.Item1.GoalsDiff += temp.Item1.GoalsDiff;
@@ -31,6 +32,7 @@ public class Update
         Program.logWriter.LogWrite($"Updated Losses: Team1 - {final.Item1.Losses}, Team2 - {final.Item2.Losses}");
 
         Program.logWriter.LogWrite("Score update completed.");
+        //returnerer to items, det ene hold og det andet opdateret
         return final;
     }
     public static void UpdateTeamPoints(Dictionary<string, CountUp> teamPoints, (CountUp, CountUp) finalScore)

@@ -4,6 +4,7 @@ using System.Reflection;
 namespace Fodbold;
 public class LogWriter
 {
+    //Hjemmelavet logwriter TM-Aksel
     private readonly string logFilePath;
     public LogWriter()
     {
@@ -40,6 +41,7 @@ public class LogWriter
             }
         }
     }
+    //smider det i din app/bin/debug/net8.0/logs folder som den opretter
     private void Log(string logMessage, TextWriter txtWriter)
     {
         try

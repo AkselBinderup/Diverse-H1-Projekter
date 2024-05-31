@@ -12,6 +12,7 @@ public class CountUp
     public List<string> RecentlyPlayed { get; set; } = new List<string>();
 
     public CountUp() { }
+    //Laver matematikken for point osv.
     public CountUp(TeamPoints teamName, string state, TeamPoints otherTeam)
     {
         TeamName = teamName.TeamName;
@@ -34,6 +35,7 @@ public class CountUp
         GoalsDiff += teamName.Goals - otherTeam.Goals;
         RecentlyPlayed.Add(otherTeam.TeamName);
     }
+    //tjekker hvem der vinder
     public static (CountUp,CountUp) Validate(TeamPoints team1, TeamPoints team2)
     {
         string stateT1;

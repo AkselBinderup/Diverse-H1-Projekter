@@ -17,6 +17,7 @@ public class TeamBracket
         string team1 = "";
         string team2 = "";
 
+        //Opsætter hold mod hinanden
         for (int i = 0; i < 2; i++)
         {
             var teamChosen = reader.ElementAt(r.Next(0, reader.Count));

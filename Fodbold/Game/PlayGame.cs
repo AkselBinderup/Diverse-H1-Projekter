@@ -2,7 +2,7 @@
 
 public class PlayGame
 {
-    //returnerer liste af countup som er holdets statistikker
+    //Det er noget mad chemistry jeg biksede sammen igår kl. 21.54 kommentarerne er for min egen skyld.
     public static List<CountUp> Start(List<string> teamNames, int amountOfGames)
     {
         List<CountUp> listOfPoints = new();
