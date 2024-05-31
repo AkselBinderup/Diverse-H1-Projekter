@@ -14,9 +14,17 @@ public class Program
     public static LogWriter logWriter = new LogWriter();
     public static void Main()
     {
-        //ender med at være 22 kampe da de spiller to gange mod 11 andre hold
-        var teamScores = PlayGame.Start(TeamNameReader.GetTeamNames(), 1);
-        Table.Draw(teamScores);
+        try
+        {
+            //ender med at være 22 kampe da de spiller to gange mod 11 andre hold
+            var teamScores = PlayGame.Start(TeamNameReader.GetTeamNames(), 1);
+            Table.Draw(teamScores);
+        }
+        catch (Exception ex)
+        {
+            logWriter.LogWrite(ex.Message);
+        }
+        
 
         Console.ReadLine();
     }
