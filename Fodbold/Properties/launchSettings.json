@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Fodbold": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

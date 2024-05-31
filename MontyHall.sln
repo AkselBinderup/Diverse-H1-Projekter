@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryssAndBall", "KryssAndBal
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{D4D5F5CB-4DDD-4DA7-AEE3-4F1AB550A04C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTicTacToe", "TestTicTacToe\TestTicTacToe.csproj", "{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTicTacToe", "TestTicTacToe\TestTicTacToe.csproj", "{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fodbold", "Fodbold\Fodbold.csproj", "{6D48CF25-1F82-4A89-874F-53A6828640CC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{30573438-7DFC-423E-8CAB-7AE3BBEE068E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D48CF25-1F82-4A89-874F-53A6828640CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D48CF25-1F82-4A89-874F-53A6828640CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D48CF25-1F82-4A89-874F-53A6828640CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D48CF25-1F82-4A89-874F-53A6828640CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30573438-7DFC-423E-8CAB-7AE3BBEE068E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30573438-7DFC-423E-8CAB-7AE3BBEE068E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30573438-7DFC-423E-8CAB-7AE3BBEE068E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30573438-7DFC-423E-8CAB-7AE3BBEE068E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

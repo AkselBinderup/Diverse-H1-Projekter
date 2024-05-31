@@ -1,75 +1,70 @@
-﻿using KryssAndBall.Functionalities;
+﻿using Xunit;
+using KryssAndBall.Functionalities;
 
-namespace TestTicTacToe;
-
-public class TestMove
+namespace TestTicTacToe
 {
-    [Fact]
-    public void UnitTestMoveFirstFive() { 
-        Move move = new Move();
-        char[,] board = new char[3, 3];
-        char player = 'x';
-        int turns = 3;
-        bool robot = false;
-
-        move.MakeMove(board, player, turns, robot);
-
-        Assert.Equal(player, board[0, 0]);
-    }
-    [Fact]
-    public void MakeMove_First5TurnsWithRobot_MoveMadeCorrectly()
+    public class TestMove
     {
-        // Arrange
-        Move move = new Move();
-        char[,] board = new char[3, 3];
-        char player = 'x';
-        int turns = 3;
-        bool robot = true;
+        [Fact]
+        public void UnitTestMoveFirstFive()
+        {
+            MoveTest move = new MoveTest();
+            char[,] board = new char[3, 3];
+            int row = 1, col = 2;
+            char player = 'x';
+            int turns = 3;
+            bool robot = false;
 
-        // Act
-        move.MakeMove(board, player, turns, robot);
+            bool result = move.MakeMove(board, player, turns, robot, row, col);
 
-        // Assert
-        // Add assertions to ensure the move is made correctly
-        // For example:
-        Assert.NotEqual(' ', board[0, 0]);
-    }
+            Assert.True(result);
+            Assert.Equal(player, board[row, col]);
+        }
 
-    [Fact]
-    public void MakeMove_AfterFirst5TurnsWithoutRobot_MoveMadeCorrectly()
-    {
-        // Arrange
-        Move move = new Move();
-        char[,] board = new char[3, 3] { { 'x', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
-        char player = 'x';
-        int turns = 6;
-        bool robot = false;
+        [Fact]
+        public void UnitTestRobotMoves()
+        {
+            MoveTest move = new MoveTest();
+            char[,] board = new char[3, 3];
+            char player = 'x';
+            int turns = 3;
+            bool robot = true;
 
-        // Act
-        move.MakeMove(board, player, turns, robot);
+            bool result = move.MakeMove(board, player, turns, robot, 0, 0); 
 
-        // Assert
-        // Add assertions to ensure the move is made correctly
-        // For example:
-        Assert.Equal(player, board[0, 1]);
-    }
+            Assert.True(result);
+            Assert.NotEqual(' ', board[0, 0]);
+        }
 
-    [Fact]
-    public void MakeMove_AfterFirst5TurnsWithRobot_MoveMadeCorrectly()
-    {
-        // Arrange
-        Move move = new Move();
-        char[,] board = new char[3, 3] { { 'x', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
-        char player = 'x';
-        int turns = 6;
-        bool robot = true;
+        [Fact]
+        public void UnitTestMovesWithoutRobot()
+        {
+            MoveTest move = new MoveTest();
+            char[,] board = new char[3, 3] { { 'x', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
+            char player = 'x';
+            int turns = 6;
+            bool robot = false;
 
-        // Act
-        move.MakeMove(board, player, turns, robot);
+            bool result = move.MakeMove(board, player, turns, robot, 0, 1); 
 
-        // Assert
-        // Add assertions to ensure the move is made correctly
-        // For example:
-        Assert.NotEqual(' ', board[1, 1]);
+            Assert.True(result);
+            Assert.Equal(player, board[0, 1]);
+        }
+
+        [Fact]
+        public void TestMoveMadecorrectly()
+        {
+            MoveTest move = new MoveTest();
+            char[,] board = new char[3, 3] { { 'x', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
+            char player = 'x';
+            int turns = 6;
+            bool robot = true;
+
+            bool result = move.MakeMove(board, player, turns, robot, 1, 1); 
+
+           
+            Assert.True(result);
+            Assert.NotEqual(' ', board[1, 1]);
+        }
     }
 }

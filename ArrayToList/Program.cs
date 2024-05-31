@@ -12,7 +12,6 @@ internal class Program
         stopwatch.Start();
         for (int j = 0; j < 1000000000; j++)
         {
-
             myList.Add(1);
 
         }
