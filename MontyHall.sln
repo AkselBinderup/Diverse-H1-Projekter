@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MontyHall", "MontyHall\MontyHall.csproj", "{A176B926-BDD5-49E5-87BE-2A912531936D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MontyHallApp", "MontyHall\MontyHallApp.csproj", "{A176B926-BDD5-49E5-87BE-2A912531936D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vaekkeur", "Vaekkeur\Vaekkeur.csproj", "{C84F2C75-A930-434F-912B-C08E7F4547F4}"
 EndProject
@@ -19,11 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTicTacToe", "TestTicTacToe\TestTicTacToe.csproj", "{B276086E-D0CE-4ED3-84A4-D12D7161B0BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fodbold", "Fodbold\Fodbold.csproj", "{6D48CF25-1F82-4A89-874F-53A6828640CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fodbold", "Fodbold\Fodbold.csproj", "{6D48CF25-1F82-4A89-874F-53A6828640CC}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{30573438-7DFC-423E-8CAB-7AE3BBEE068E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{FA633919-0E92-4429-AD0C-D5F24078DE1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{FA633919-0E92-4429-AD0C-D5F24078DE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQSend", "..\MQSend\MQSend.csproj", "{2923728C-CED8-471E-9BDE-D2BD85AA25BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQRecieve", "..\MQRecieve\MQRecieve.csproj", "{95BC3B6F-1340-4534-9B0C-0E2A2AF25B49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,14 @@ Global
 		{FA633919-0E92-4429-AD0C-D5F24078DE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA633919-0E92-4429-AD0C-D5F24078DE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA633919-0E92-4429-AD0C-D5F24078DE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2923728C-CED8-471E-9BDE-D2BD85AA25BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2923728C-CED8-471E-9BDE-D2BD85AA25BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2923728C-CED8-471E-9BDE-D2BD85AA25BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2923728C-CED8-471E-9BDE-D2BD85AA25BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BC3B6F-1340-4534-9B0C-0E2A2AF25B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BC3B6F-1340-4534-9B0C-0E2A2AF25B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BC3B6F-1340-4534-9B0C-0E2A2AF25B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BC3B6F-1340-4534-9B0C-0E2A2AF25B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ internal class Program
 {
     static void Main()
     {
-        int antalGentagelser = 100;
+        int antalGentagelser = 1000;
         float antalVundet = 0;
 
         Random rand = new Random();
@@ -23,6 +23,6 @@ internal class Program
 
         }
         var antal = (antalVundet / antalGentagelser) * 100.00;
-        Console.WriteLine(antal);
+        Console.WriteLine($"Sandsynlighed for at vinde ved at skifte dør: {antal}%");
     }
 }
